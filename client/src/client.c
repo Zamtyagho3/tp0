@@ -70,10 +70,10 @@ t_log* iniciar_logger(void)
 t_config* iniciar_config(void)
 {
 	t_config* nuevo_config;
-	nuevo_config = config_create("./cliente.config");
+	nuevo_config = config_create("../cliente.config");
 	if (nuevo_config == NULL) {
-    // ¡No se pudo crear el config!
-    abort();
+    	// ¡No se pudo crear el config!
+    	abort();
 	}
 	return nuevo_config;
 }
